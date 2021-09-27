@@ -120,23 +120,54 @@
     </div>
 @endsection
 
-@section('contacto')
-@if (@$_GET['i']=='ok')
-<h3>La consulta se envio correctamente. Nos contactaremos a la brevedad.</h3>
-@else
-<div class="contenedor">
-<h3>Contacto</h3>
-<form action="{{ route('contact.email') }}" method="post" enctype="multipart/form-data">
-    @csrf
-    <input type="text" placeholder="Nombre" name="name" required>
-    <input type="email" placeholder="Email" name="email" required>
-    <textarea placeholder="Mensaje" name="message" required></textarea>
-    <input type="submit" value="ENVIAR MENSAJE">
-</form>
-@endif
-<div class="contacto-info">
-    <div class="mail"><img src="img/iconos/icon-email.png" alt=""><h6>darinelcigarroa97@gmail.com</h6></div>
-    <div class="whatsapp"><img src="img/iconos/icon-whatsapp.png" alt=""><h6>9612365046</h6></div>
-</div>
-</div>
+@section('contact')
+    <div class="content">
+        <h2>CONTANT US</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem accusantium dolore, in minima consectetur repellendus dolores accusamus saepe itaque laboriosam! Ea distinctio corporis commodi dolores sapiente reprehenderit ducimus possimus pariatur?</p>
+    </div>
+    <div class="container">
+        <div class="contactIndo">
+            <div class="box">
+                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="text">
+                    <h4>Address</h4>
+                    <p>FREEPROGRAMS,<br>Aprender es ser aprendido</p><br><p>9612365046</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fas fa-phone-volume"></i></div>
+                <div class="text">
+                    <h4>phone</h4>
+                    <p>9612365046</p>
+                </div>
+            </div>
+            <div class="box">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+                <div class="text">
+                    <h4>Email</h4>
+                    <p>darinelcigarroa97@gmail.com</p>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" id="" placeholder="nombre">
+                        <span>Full name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="" id="" required="required" placeholder="email">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <span>Type your Message..</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" id="">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 @endsection

@@ -66,9 +66,9 @@
     </nav>
     <div class="contenedor" id="contenedor-titulo-flex">
 		<div class="contenido-titulo">
-			<h1>Emprendiendo</h1>
-			<h2>Darinel Cigarroa De Los Santos</h2>
-			<a href="">VER MIS TRABAJOS</a>
+			<h1>FREEPROGRAMS</h1>
+			<h2>ENSEÑAR ES SER ENSEÑADO</h2>
+			<a class="btn btn-dark" href="#">VER MIS TRABAJOS</a>
 		</div>
 	</div>
 </header>
@@ -93,8 +93,8 @@
 			@yield('publicaciones')
         </section>
 
-		<section id="contacto">
-            @yield('contacto')
+		<section id="contact">
+            @yield('contact')
         </section>
 
         <section id="email">
